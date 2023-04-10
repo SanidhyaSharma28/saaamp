@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("../bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.scores{
+    font-family: 'Source Serif Pro', serif;
+
+}
+#scoreBox{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+#hiscoreBox{
+    position: absolute;
+    top: 130px;
+    left: 100px;
+}
+#gameoverscreen{
+    display:none;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-image: url("../gvimgfin.jpg");
+}
+#board{
+    background: linear-gradient(rgb(25, 253, 25),rgb(251, 251, 15));
+    width: 90vmin;
+    height: 92vmin;
+    border: 3px black ;
+    border-style:ridge;
+    border-radius: 4px;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+    background: linear-gradient(red,orange);
+    border: 2px double black;
+    border-radius: 6px;
+    transform: scale(1.08);
+}
+.snake{
+    border-radius: 10px;
+    background-color:brown;
+    border: 2px solid white;
+}
+.food{
+    border-radius: 3px;
+    border: 2px solid black;
+    background:linear-gradient(rgb(250, 61, 61),rgb(250, 250, 149)) ;
+}
